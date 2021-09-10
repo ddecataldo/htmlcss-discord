@@ -4,15 +4,22 @@
     margin: 0;
     box-sizing: border-box;
 }
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
 
 /***************
 TAG 
 ***************/
+body{
+    font-family: 'Heebo', sans-serif;
+}
 header{
     background-image: url(../img/jumbo.png);
     background-size: cover;
     background-position: center center;
-    height: 100vh;
 }
 
 /*************** 
@@ -28,17 +35,29 @@ CLASS
     width: 920px;
     margin: 0 auto;
 }
+.mr--auto{
+    margin-left: calc(100% / 6);
+    margin-right: calc(100% / 6);
+}
 
 /* btn */
 .btn{
     border-radius: 40px;
-    font-size: 14px;
-    padding: 7px 16px;
     text-decoration: none;
+    font-size: 16px;
+    color:#000;
+    padding: 16px 32px;
 }
 .btn--white{
     background-color: #fff;
-    color:#000;
+}
+.btn--dark{
+    background-color: #23272a;
+    color: #fff;
+}
+.btn--small{
+    font-size: 14px;
+    padding: 7px 16px;
 }
 
 /* Column */
@@ -86,12 +105,19 @@ nav ul li a{
 
 /* Hero Section */
 .sectionHero{
-    padding:96px 0;
+    padding:150px 0;
 }
 .sectionHero .sectionHero__text{
     color:#fff;
     text-align: center;
+    padding-bottom: 24px;
 }
 .sectionHero .sectionHero__text h1{
     padding-bottom: 24px;
+}
+.sectionHero__button{
+    text-align: center;
+}
+.sectionHero__button a {
+    display: inline-block;
 }
