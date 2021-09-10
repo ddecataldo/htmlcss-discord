@@ -8,6 +8,12 @@
 /***************
 TAG 
 ***************/
+header{
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
 
 /*************** 
 ID 
@@ -17,7 +23,25 @@ ID
 CLASS 
 ***************/
 
-/* column */
+/* General */
+.container{
+    width: 920px;
+    margin: 0 auto;
+}
+
+/* btn */
+.btn{
+    border-radius: 40px;
+    font-size: 14px;
+    padding: 7px 16px;
+    text-decoration: none;
+}
+.btn--white{
+    background-color: #fff;
+    color:#000;
+}
+
+/* Column */
 .col-1_6 {
     width: calc(100% / 6);
 }
@@ -36,4 +60,38 @@ CLASS
 
 .col-6_6{
     width: 100%;
+}
+
+[class*="col-"] {
+  float: left;
+}
+
+/* Menù */
+.row__menu{
+    padding-top:30px;
+}
+nav ul{
+    text-align: center;
+    line-height: 20px;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    color: #fff;
+    padding: 5px 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.sectionHero{
+    padding:96px 0;
+}
+.sectionHero .sectionHero__text{
+    color:#fff;
+    text-align: center;
+}
+.sectionHero .sectionHero__text h1{
+    padding-bottom: 24px;
 }
