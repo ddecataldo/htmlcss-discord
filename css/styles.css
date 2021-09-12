@@ -29,6 +29,8 @@ section{
 }
 footer{
     background-color: #23272a;
+    padding: 50px 0;
+    color: #fff;
 }
 /*************** 
 ID 
@@ -60,6 +62,9 @@ CLASS
 }
 .text--center{
     text-align: center;
+}
+.text--right{
+    text-align: right;
 }
 
 /* btn */
@@ -165,4 +170,45 @@ section .img-stars{
 }
 .section:nth-child(even) .col-4_6{
     float: right;
+}
+
+/* Footer */
+footer h3{
+    font-size: 25px;
+    color: #7289da;
+    padding-bottom: 12px;
+    line-height: 25px;
+}
+footer h5{
+    color: #7289da;
+}
+footer ul{
+    list-style-type: none;
+}
+footer li{
+    padding: 5px 0;
+}
+footer a,
+footer a:hover,
+footer a:focus{
+    color: #fff;
+    text-decoration: none;
+}
+.footer__lang{
+    padding-bottom: 12px;
+}
+.footer__lang img{
+    width: 20px;
+}
+.footer__icon a,
+.footer__icon a:hover,
+.footer__icon a:focus{
+    color: #fff;
+}
+.footer__icon i{
+    font-size: 20px;
+}
+.border__top{
+    border-top: 1px solid #4a5882;
+    margin-top: 30px;
 }
